@@ -1,0 +1,68 @@
+/* PayeesList.css */
+.payees-container {
+  padding: 20px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.payees-list {
+  max-height: 1000px;
+  overflow-y: scroll;
+  list-style-type: none;
+  padding: 0;
+  
+  /* Hides the scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.payees-list::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.payee-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.payee-item:hover {
+  background-color: #f1f1f1;
+}
+
+.payee-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.payee-name {
+  font-weight: bold;
+}
+
+.payee-bank {
+  font-style: italic;
+}
+
+/* ThirdPage.css */
+.payee-details {
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}

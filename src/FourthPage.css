@@ -1,0 +1,85 @@
+/* FourthPage.css */
+
+/* Root container to fit the whole viewport */
+.fourth-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure the button stays at the bottom */
+  align-items: center;
+  height: 100vh;           /* Full viewport height */
+  padding: 0;              /* Remove padding */
+  margin: 0;               /* Remove margin */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  text-align: center;
+  /* overflow: hidden;        Prevent scrolling */
+}
+
+/* Summary container for holding transaction details */
+.summary-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;                /* Use full width */
+  max-width: 350px;           /* Set a maximum width */
+  text-align: center;
+  box-sizing: border-box;
+  flex-grow: 1;               /* Make sure it uses the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;    /* Ensure content is centered */
+}
+
+/* Check icon styling */
+.check-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  background-color: #28a745;
+  border-radius: 50%;
+  font-size: 30px;
+  color: white;
+}
+
+/* Details section styling */
+.summary-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Back to Home button */
+.back-to-home-btn {
+  margin-top: 15px;
+  padding: 12px 0;
+  width: 100%;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  flex-shrink: 0;             /* Ensure the button doesn't shrink */
+}
+
+.back-to-home-btn:hover {
+  background-color: #c9302c;
+}
+
+/* Ensuring responsiveness on smaller screens */
+@media (max-width: 480px) {
+  .summary-container {
+    padding: 15px;
+    max-width: 90%;
+  }
+  .back-to-home-btn {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
